@@ -25,4 +25,11 @@ public class MainTest {
         log.warn("Warning");
         log.error("Error");
     }
+
+    @Test
+    void testLogFormat() {
+        log.info("Without Parameter");
+        log.info("{} + {} = {}", 10, 10, (10 + 10));
+        log.error("Ups", new NullPointerException());
+    }
 }
