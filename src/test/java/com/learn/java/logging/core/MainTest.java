@@ -16,4 +16,13 @@ public class MainTest {
         System.out.println("Halo Logging.");
         log.info("Halo Logging.");
     }
+
+    @Test
+    void testLevel() {
+        log.trace("Trace");
+        log.debug("Debug");
+        log.info("Info");
+        log.warn("Warning");
+        log.error("Error");
+    }
 }
